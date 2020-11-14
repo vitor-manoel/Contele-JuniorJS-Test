@@ -1,0 +1,33 @@
+#order-container .order-content .order-form .order-box{
+    background-color: #f7f7f7;
+    padding: 5%;
+}
+
+#order-container .order-content .order-form .button{
+    width: 220px;
+    display: block;
+    margin: 2% 5% 3% auto;
+    background-color: #1a237a;
+    border-color: #1a237a;
+}
+
+#order-container .order-content .order-form .order-box .order-line{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+    list-style: none;
+}
+
+#order-container .order-content .order-form .order-box .order-line .order-component h3{
+    font-weight: 700;
+    color: #1a237a;
+}
+
+@media only screen and (max-width: 800px) {    
+    #order-container .order-content .order-form .order-box .order-line{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5%;
+        list-style: none;
+    }
+}
