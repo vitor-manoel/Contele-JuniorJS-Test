@@ -3,11 +3,11 @@ module.exports = {
     development: {
       client: 'pg',
       connection: {
-        host : '',
-        port: 0,
-        user : '',
-        password : '',
-        database : '',
+        host : 'ec2-35-168-77-215.compute-1.amazonaws.com',
+        port: 5432,
+        user : 'icpxsawhohgqvb',
+        password : '2b4db490716d12e23c92d2d95f7a990e7274a688e19db013134d585a7d1c5311',
+        database : 'daj51r9dgraud1',
         ssl: { rejectUnauthorized: false },
       },
       pool: {
@@ -20,13 +20,13 @@ module.exports = {
     },
   
     test: {
-        client: 'pg',
+      client: 'pg',
       connection: {
-        host : '',
-        user : '',
-        port: 0,
-        password : '',
-        database : '',
+        host : 'ec2-35-168-77-215.compute-1.amazonaws.com',
+        port: 5432,
+        user : 'icpxsawhohgqvb',
+        password : '2b4db490716d12e23c92d2d95f7a990e7274a688e19db013134d585a7d1c5311',
+        database : 'daj51r9dgraud1',
         ssl: { rejectUnauthorized: false },
       },
       pool: {

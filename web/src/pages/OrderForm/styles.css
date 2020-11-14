@@ -1,3 +1,7 @@
+#order-container .order-content img{
+    max-width: 100%;
+}
+
 #order-container .order-content .order-form .order-box{
     background-color: #f7f7f7;
     padding: 5%;
@@ -15,7 +19,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5%;
-    list-style: none;
 }
 
 #order-container .order-content .order-form .order-box .order-line .order-component h3{
@@ -23,11 +26,10 @@
     color: #1a237a;
 }
 
-@media only screen and (max-width: 800px) {    
+@media only screen and (max-width: 880px) {    
     #order-container .order-content .order-form .order-box .order-line{
         display: grid;
         grid-template-columns: 1fr;
         gap: 5%;
-        list-style: none;
     }
 }
