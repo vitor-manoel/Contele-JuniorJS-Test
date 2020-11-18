@@ -1,3 +1,6 @@
+/*#######################################################################
+# - Função de criação da tabela 'orders' no BD :                        #
+#######################################################################*/
 exports.up = function(knex) {
     return knex.schema.createTable('orders', function(table) { 
         table.increments('id');
@@ -23,7 +26,9 @@ exports.up = function(knex) {
         table.integer('trackersAcquisition').notNullable();
     });
 };
-
+/*#######################################################################
+# - Função de exclusão da tabela 'orders' no BD :                        #
+#######################################################################*/
 exports.down = function(knex) {
     return knex.schema.dropTable('orders');
 };

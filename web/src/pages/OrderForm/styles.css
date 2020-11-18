@@ -1,12 +1,16 @@
+/*Estilização da LogoImg*/
 #order-container .order-content img{
     max-width: 100%;
+    margin: 2% 0 2% 5%;
 }
 
+/*Estilização da caixa de formulário*/
 #order-container .order-content .order-form .order-box{
     background-color: #f7f7f7;
-    padding: 5%;
+    padding: 3% 5% 3% 5%;
 }
 
+/*Estilização do botão Order Now*/
 #order-container .order-content .order-form .button{
     width: 220px;
     display: block;
@@ -15,21 +19,43 @@
     border-color: #1a237a;
 }
 
+/*Estilização da divisão de formulários*/
 #order-container .order-content .order-form .order-box .order-line{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5%;
+    margin-bottom: 10px;
 }
 
+/*Estilização dos títulos de formulários*/
 #order-container .order-content .order-form .order-box .order-line .order-component h3{
     font-weight: 700;
     color: #1a237a;
+    margin-bottom: 25px;
 }
 
+/*Estilização do texto de pré-seleção dos 'selects'*/
+#order-container .order-content .order-form .order-box .order-line .order-component select:required:invalid{
+    color: gray;
+}
+
+/*Estilização do texto de opções dos 'selects'*/
+#order-container .order-content .order-form .order-box .order-line .order-component option{
+    color: black;
+}
+
+/*Estilização das caixas de seleção*/
+#order-container .order-content .order-form .order-box .order-line .order-component .order-checkBox{
+    font-size: 15px;
+    margin-bottom: -6px;
+}
+
+/*Controle de estilização conforme responsividade*/
 @media only screen and (max-width: 880px) {    
     #order-container .order-content .order-form .order-box .order-line{
         display: grid;
         grid-template-columns: 1fr;
         gap: 5%;
+        margin-bottom: 35px;
     }
 }
